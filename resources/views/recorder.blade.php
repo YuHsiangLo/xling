@@ -36,9 +36,9 @@
 	}
 </script>
 <style>
-	canvas { 
-		display: inline-block; 
-		background: #202020; 
+	canvas {
+		display: inline-block;
+		background: #202020;
 		width: 90%;
 		height: 55px;
 		{{-- box-shadow: 0px 0px 10px blue; --}}
@@ -72,7 +72,7 @@
 		<div id="activateAudio" class="modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
 			<div class="modal-dialog" role="document">
 			<div class="modal-content">
-				
+
 				<div class="modal-header">
 				<h5 class="modal-title"><div id="wizard-title">@lang('messages.RecorderActivateAudioTitle')</div></h5>
 				</div>
@@ -224,7 +224,7 @@
         hours = 0;
         recording_in_progress = false;
   }
-  
+
   start.onclick = function() {
       toggleRecording(document.getElementById('recordButton'));
 
