@@ -241,7 +241,8 @@ function toggleMono() {
     audioInput.connect(inputPoint);
 }
 
-function gotStream(stream) {
+function gotStream(stream, locale) {
+    Lang.setLocale(locale);
     audioContext = new AudioContext();
     inputPoint = audioContext.createGain();
     realAudioInput = audioContext.createMediaStreamSource(stream);
@@ -285,7 +286,7 @@ function createPeakMeter() {
     mainMeter.createMeter(myMeterElement, meterNode, {});
 }
 
-function initAudio() {
+function initAudio(locale) {
     // Older browsers might not implement mediaDevices at all, so we set an empty object first
     if (navigator.mediaDevices === undefined) {
         navigator.mediaDevices = {};
@@ -317,7 +318,7 @@ function initAudio() {
 
     navigator.mediaDevices.getUserMedia({'audio': true, 'video': false})
     .then(function(stream) {
-            return gotStream(stream);
+            return gotStream(stream, locale);
     })
     .catch(function(e) {
             alert('Error getting audio');

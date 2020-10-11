@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-
 class WelcomePageController extends Controller
 {
     /**
@@ -12,6 +10,7 @@ class WelcomePageController extends Controller
     public function show($locale)
     {
         \App::setLocale($locale);
+        session(['my_locale' => $locale]);
         return view('welcome',
         [    'locale' => \App::getLocale() ]);
     }
