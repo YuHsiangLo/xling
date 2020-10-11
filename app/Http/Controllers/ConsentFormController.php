@@ -25,12 +25,12 @@ class ConsentFormController extends Controller
      * Save the user's consent form
      */
     public function store(Request $request)
-    {     
+    {
         // define variables and set to empty values
         $name = $email = $code = "";
 
         $public = false;
-          
+
         $name = $request->user_name;
         $email = $request->user_email;
         if ($request->share_box == "on") {
@@ -44,7 +44,7 @@ class ConsentFormController extends Controller
             'public' => $public,
             'language' => $language
         ]);
-          
+
         $request->session()->put('user_id', $testModel->getKey());
 
         return redirect()->route('demographic_questionnaires.create');
@@ -114,14 +114,14 @@ class ConsentFormController extends Controller
             [ 'consent_forms' => $consentForms ]);
     }
 
-    public function export() 
+    public function export()
     {
         if (Gate::allows('manage-data')) {
             return Excel::download(new ConsentFormsExport, 'submissions.csv');
         }
-        
+
         return redirect('admin')->with('error', 'You are not currently authorized to manage submissions!');
     }
 
-    
+
 }

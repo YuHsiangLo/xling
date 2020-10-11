@@ -82,7 +82,7 @@
 						</div>
 				</div>
 				<div id="wizard-footer" class="modal-footer">
-					<p id="activate-audio" class="text-center"><button type="button" class="btn btn-primary" onclick="initAudio();">@lang('messages.RecorderActivateAudioButton')</button></p>
+					<p id="activate-audio" class="text-center"><button type="button" class="btn btn-primary" onclick="initAudio('{{$locale}}');">@lang('messages.RecorderActivateAudioButton')</button></p>
 				</div>
 			</div>
 			</div>

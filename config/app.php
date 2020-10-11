@@ -161,7 +161,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
         /*
          * Package Service Providers...
          */
@@ -177,7 +176,6 @@ return [
 
         Nebed\UserAgent\UserAgentServiceProvider::class,
         Mariuzzo\LaravelJsLocalization\LaravelJsLocalizationServiceProvider::class
-
     ],
 
     /*
@@ -233,9 +231,12 @@ return [
 
     ],
 
-    'wlar_languages' => [[ "name" => "English", "id" => "en" ]],
-    'wlar_email_required' => false,
-    'wlar_request_consent_publication' => false,
-    'wlar_additional_reading_enabled' => false,
+    'wlar_languages' => [
+        ["name" => "English", "id" => "en" ],
+        ["name" => "臺灣中文", "id" => "mn_tw"]
+        ],
+    'wlar_email_required' => true,
+    'wlar_request_consent_publication' => true,
+    'wlar_additional_reading_enabled' => true,
 
 ];
