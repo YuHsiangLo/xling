@@ -118,6 +118,11 @@ function startSubmit() {
 }
 
 function toggleRecording(e) {
+    var myMeterElement = document.getElementById('my-peak-meter');
+    myMeterElement.innerHTML = '';
+    myMeterElement.innerText = '';
+    myMeterElement.style = 'width: 90%; height: 50px; display: inline-block; background: #202020;';
+
     if (e.classList.contains("recording")) {
         // stop recording
         audioRecorder.stop();
@@ -268,7 +273,7 @@ function gotStream(stream, locale) {
     var activateAudio = document.getElementById('activate-audio');
     firstStep.innerHTML = '<p>' + Lang.get('messages.RecorderMicInputCheckAbove') + '</p><p><div id="my-peak-preview-meter" style="width: 400px; height: 50px; background: #202020;"></div></p><p>' + Lang.get("messages.RecorderMicInputCheckBelow") + '</p><p>' + Lang.get("messages.RecorderMicInputCheckNoSignal") + '</p>';
     wizardTitle.innerHTML = Lang.get('messages.RecorderMicInputCheckTitle');
-    activateAudio.innerHTML = '<button type="button" class="btn btn-info" data-dismiss="modal">' + Lang.get("messages.OK") + '</button>';
+    activateAudio.innerHTML = '<button type="button" class="btn btn-info" data-dismiss="modal" onclick="onOk();">' + Lang.get("messages.OK") + '</button>';
 
     // create volume meter in jquery popup
     var previewMeter = webAudioPeakMeter();
@@ -276,7 +281,15 @@ function gotStream(stream, locale) {
     var meterPreviewNode = previewMeter.createMeterNode(realAudioInput, audioContext);
     previewMeter.createMeter(myMeterPreviewElement, meterPreviewNode, {});
 
-    createPeakMeter();
+    //createPeakMeter();
+}
+
+function onOk() {
+    console.log('pushedd')
+    audioRecorder.stop();
+    audioContext.close();
+    gumStream.getAudioTracks()[0].stop();
+    recording = false;
 }
 
 function createPeakMeter() {
@@ -376,6 +389,8 @@ function startRecording() {
         //updateAnalysers();
         audioRecorder.clear();
         audioRecorder.record();
+
+        createPeakMeter();
 
     }).catch(function(e) {
         alert('Error getting audio');

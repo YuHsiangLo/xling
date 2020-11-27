@@ -1,20 +1,25 @@
-<h5>請確定你已經上傳音檔
-    <br><br>
-    You can use the prompts below if you wish, but you can talk about something else if you'd like. You are free to decide what you discuss, but we would like to ask you to avoid topics that may be sensitive or controversial from a religious / political / racial / sexual point of view. We would also like you to avoid disclosing personally identifying information such as your name, address, workplace, etc.
-    <br>
-    The recording needs to be between 5 and 8 minutes long. When you are ready, click the microphone button once again and start speaking. When you are done, click on the microphone button again to end the recording, and click the submit button.
+<h5>
+    <p>
+    請確認您已上傳您的「篇章閱讀」錄音檔。
+    </p>
+    <p>
+    你可使用以下提示來回答本部分，但我們也歡迎您談論其他您感興趣的主題。您可以自由決定談論的內容，但請避免敏感話題如宗教、政治、種族、及性愛。在您的談論內容中，請避免指名特定人名、地址或是工作地點。
+    </p>
+    <p>
+    你可使用以下提示來回答本部分，但我們也歡迎您談論其他您感興趣的主題。您可以自由決定談論的內容，但請避免敏感話題如宗教、政治、種族、及性愛。在您的談論內容中，請避免指名特定人名、地址或是工作地點。此部分須要您談論約約5-8分鐘。當您準備好後，請按「開始錄音」進行錄音並在停止錄音後按「上傳」鍵上傳您的音檔。
+    </p>
 </h5>
-        <ul>
-        <li>Tell us about your hobbies</li>
-        <li>What was your childhood dream?</li>
-        <li>What is your morning/daily routine?</li>
-        <li>Tell us about a happy event of your life.</li>
-        <li>What do you think is important for achieving happiness?</li>
-        <li>Describe your typical weekend.</li>
-        <li>What's your job? How does it work?</li>
-        <li>What's your life's greatest achievement? How has this affected your life?</li>
-        <li>What is the most useful piece of advice you have been given?</li>
-        <li>Tell us about your favourite book or movie.</li>
-        <li>Did you like school? What were your best/worst subjects?</li>
-        </ul>
-        <h5>Thank you for your participation.</h5>
+<ul>
+    <li>您的興趣為何？</li>
+    <li>您兒時的夢想為何？</li>
+    <li>您「平常一日」包含哪些活動？</li>
+    <li>跟我們分享您生命中一件開心的事。</li>
+    <li>您認為「快樂」的成分是什麼？</li>
+    <li>您平常週末會做什麼？</li>
+    <li>您的工作為何？工作的內容為何？</li>
+    <li>您人生最大的成就為何？這樣成就對您的生活有何影響？</li>
+    <li>您目前聽過最實用的忠告為何？</li>
+    <li>您最喜歡的書籍或是電影為何？</li>
+    <li>您喜歡上學嗎？您最喜歡及最討厭的科目為何？</li>
+</ul>
+<h5>再次感謝您參加本研究！</h5>

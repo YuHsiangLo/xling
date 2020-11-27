@@ -1,5 +1,8 @@
-<strong>歡迎, and thank you for your interest in the @lang('messages.IndexTitle') project!</strong>
+<strong>歡迎並感謝您抽空參加@lang('messages.IndexTitle')研究計畫！</strong>
 
-<br><br>中文範本Did you ever notice how some parts of English-speaking North America have strongly distinguishable accents compared to British Columbia? Probably. But have you ever noticed that certain regions of B.C. seem to have some slight differences in the way words are pronounced? Probably not. The differences in accent in British Columbia are extremely subtle, and there is not much information about how and where those differences can occur. This study is being conducted by Dr. Bob Pritchard (UBC School of Music) and Dr. Molly Babel (UBC Linguistics). If you decide to participate in this study, you will be asked to answer a few brief questions about yourself, and then record yourself reading a short passage in English. The passage will take roughly 3-4 minutes to read aloud.
+<br><br>
+本研究計畫預計建構一個跨語言的語料庫，若您同意參加，您的錄音將成為語料庫的一部分。本語料庫將協助我們了解語言變遷、跨語言發音的細微差異、以及人腦如何處理語音資訊。
+若您同意參加本研究，在進入下一頁後您會先回答一些基本的個人背景問題，並閱讀一則簡短的中文文章以及回應一些問題。中文文章的篇幅約為五至六分鐘，而回應問題的部分會請您至少花五分鐘的時間發表您的答案或意見。
 
-<br><br>中文範本To participate in the experiment, please click the button below.
+<br><br>
+請點擊下方按鍵進入研究頁面。

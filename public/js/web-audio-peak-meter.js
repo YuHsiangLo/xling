@@ -99,12 +99,12 @@ function webAudioPeakMeter() {
       textLabels[i] = '-∞';
     }
     meterNode.onaudioprocess = updateMeter;
-    meterElement.addEventListener('click', function() {
-      for (var i = 0; i < channelCount; i++) {
-        channelPeaks[i] = 0.0;
-        textLabels[i] = '-∞';
-      }
-    }, false);
+    // meterElement.addEventListener('click', function() {
+    //   for (var i = 0; i < channelCount; i++) {
+    //     channelPeaks[i] = 0.0;
+    //     textLabels[i] = '-∞';
+    //   }
+    // }, false);
     paintMeter();
   };
 

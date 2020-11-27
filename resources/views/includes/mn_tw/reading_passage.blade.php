@@ -1,12 +1,35 @@
-<h5>When you are ready, click the microphone button and start reading out loud. When you are done, click on the microphone button to stop recording, and submit your recording.</h5>
-<p><strong>Please record the following as part of your reading of the story: this allows us to coordinate readings with locations.</strong>  “My name is _____(your full name)_____ and I live in _____(your current home location)_____. This is my reading of <strong>Vancouver Dawn</strong>.”</p>
-<h2 style="text-align: center;"><strong>Vancouver Dawn</strong></h2>
-<p>Mike rolled out of his cot, glanced over at Danny sleeping on the floor, and then staggered down the hall to the kitchen. His head was still thick from last night’s beer. The sink had bits of pasta and eggshell in it, and part of an old bagel. Dumping a tin of beans in a pan to heat, he rolled a cigarette, then stared out the window. Grey February lightened the peaks above Vancouver and a vee of Canada geese drifted high above the neighbour’s roof. The crow was back on the telephone pole across the street, silhouetted against a mountain.</p>
-<p>Last night he made a phone call to Verna to ask for more money. He hated to do that but things were pretty thin right now. She could be such a drama queen. Angry. Rude. So negative, always saying he was the root of the problem. She wanted him to beg her to come back. It had taken a few beers to get over that conversation. When he ran into her at the plaza on Tuesday he had to pull his hat down tight and walk away while she yelled that he was a sorry excuse for a father. As if she was a good mom! She liked to bait him. She would brag about the salmon bakes around the pool at Frank’s new house, about the thick oak beams in the living room, about the holidays. He wasn’t sure if he had the strength to face her again, let alone try to talk things out. He might have to change the route he walked.</p>
-<p>Danny appeared in the kitchen doorway, still in his pajamas. “Hey pal, we’re up! How’s my buddy, how’s it going, eh?” Mike said. He said that every morning. And every morning Danny would look at the floor and shrug. Mike pushed bread into the toaster. When it was done he dumped beans on the toast, poured some milk, and slid them in front of Danny. Danny picked up a pen and began scribbling, his head bent low over some scrap paper. He always drew animals. Moose, bears, skunks, mice, ducks, eagles, kittens, goats. But not people. Never people. Sometimes the animals would be missing a paw or a hoof. He once drew a mouse missing a leg. Mike hated that drawing.</p>
-<p>Mike went back to the window, nursing his cigarette and wishing for a coffee. He listened to the scratching of Danny’s pen, the muttering of the radio news, and the quiet tick-tock of the hall clock. He took another drag on his cigarette and said, “Eat up, buddy.” Like he did every morning. Who’d have thought a regular job could disappear so quickly? Ten years down in the hole, pulling out ton after ton of ore, a decent paycheck up at the mine, lots of laughs with Verna, it had been a good life. Then bang! Gone.</p>
-<p>He heard Danny slide out of the kitchen and go back to the bedroom to change, a half bitten piece of toast left on his plate. Mike opened his mouth to speak, then thought better of it. After the accident, things had gone south: the dance of endless Workers Comp meetings, the lag between promises and payments, a constant sore back, the metal pin a pain in his leg. And Verna always a pain in his neck.</p>
-<p>It was time to go. He sighed, stubbed out his cigarette, dumped things in the sink to wash later, and helped Danny into his boots and raincoat. Danny picked up his school bag and they headed out together into the Vancouver dawn.</p>
-<p>© 2017/18 B. Pritchard</p>
-<p><h5>Thank you for recording yourself reading this passage! You can now click the microphone icon to stop recording. Please submit your recording using the "Submit Recording" button.</h5></p>
-<p><h5>A successful submission should result in the message "Upload Successful!" displayed below the recorder. After seeing this message, you may close your web browser. Thank you for your participation in this project!</h5></p>
+<h5>
+    準備好後，請按「開始錄音」並朗讀以下文章。讀完文章後請按「停止錄音」並上傳您的音檔。結束後請按「自由問答」標籤進入下一個部分。
+</h5>
+<hr>
+<p>
+    登山不僅僅是一項休閒活動，它還是一個良好的運動方式並對心理健康也有益助。有些人可能會說除非你走一段非常長的距離，不然登山並不能算是一種「運動」，但實際上任何距離的登山都可以讓人的身心靈得到改善。談及登山的好處，大家第一個想到的是登山可以提高心跳速度，進而增加血液循環。血液循環可以增加心臟的活動，達到降低心血管疾病及高血壓的風險。規律的登山也可以維持骨骼強健，因為當我們不用它時骨骼會變得脆弱，而登山正好可以鍛鍊骨骼適應不同的使用強度。所以規律的登山可以強化骨骼原因就在於骨骼使用的時機增加了。運動可以維持肌肉這件事廣為人知，但登山還可以訓練身體的協調性，並能夠徹底伸展雙腿並增加身體的柔軟度。
+</p>
+<p>
+    有些人登山時習慣用登山杖，有人可能會認為登山杖看起來有些滑稽，但登山杖其實具備提升運動的效果，因為你胸部及手臂的肌肉也會得到較大的運動量。使用登山杖與可以減輕施加在膝蓋上的壓力，因為登山杖可以幫助你利用手臂及腿部的力量來行走，並有助於降低部分的人可能會在登山後感到得膝蓋疼痛。在將過一些較崎嶇的路段時，登山杖也可以幫忙維持平衡。
+</p>
+<p>
+    登山也可以紓解壓力（順帶一提，洗碗其實也可以紓壓），因為登山可以讓你暫時脫離每天要面對的瑣事，並沈浸在像森林等放鬆的自然環境中。由於長期的壓力會增加心血管疾病及高血壓的風險，登山紓壓的效果正好可以預防這些疾病。登山可以讓你遠離手機、電腦、以及其他容易讓人分心的產品。沈浸在自然的環境也有安撫的效果，並讓登山者有機會反思並得到心靈的平靜。有些醫生甚至開始給慢性病患者藥物只外的「登山處方」。這些「自然處方」雖然本身並不能治癒疾病，但可以在正規療程上有所幫助。
+</p>
+<p>
+    另一個登山的好處是它有不同的難易度，你可以在附近的公園散步15分鐘、爬爬近郊的山丘、或是挑戰垂直攀岩。正因如此，登山對各種體格的人都很適合，老練的運動員可以藉由登山活動全身的筋骨來維持或是訓練不同的肌肉群，業餘登山客也可以藉著登山來提升自己的平衡感及活動力。
+</p>
+<p>
+    由於登山往往在不平坦的地面上活動，它跟上健身房、騎車、或是在水泥地上慢跑有所區別。登山者需要思考在不平坦的地方上如何走下一步，這些多樣的移動方式與在跑步機上來回重複的動作相當不同。在登山時，我們的身體須要不時轉換位置及方向，來閃避障礙物、調整高度、或是避免打滑，這些動作會使用到腿部以外的各式各樣的肌群。你可能不會覺得這些肌群有訓練後的痠痛感，但這些肌群實際上會慢慢變強壯。因為你需要平衡感及小心的動作來適應不同的地形，登山也可以幫助你更靈活得活動身體。當你可以更清楚的意識到你運動時的動作，你會與你的身體有更好的連結並感到舒暢。透過這些訓練，也許你終於可以完成你一直嘗試的連續後空翻，或是接住你家貓咪踢下桌的馬克杯。良好的專注力也可以降低發生意外傷害的機率。在登山時那些小心翼翼的步伐亦是良好的運動習慣，因為你可以更加了解自身身體的活動方式並知道如何保持健康。
+</p>
+<p>
+    除此之外，登山道或其附近地區往往風光明媚。很多人會想登山其實也是衝著這些明媚的景緻。有誰不愛沙灘上的夕陽或是夏日撩過山間樹梢的微風呢？
+</p>
+<p>
+    登山最好能夠結伴前往以策安全，且登山無疑為一與家人或朋友共享時光及談天的好時機。並肩行走並談天說地都可以增進人與人之間的連結。因為登山有助於振奮心情，也不失為一共享優質時光的機會。
+</p>
+<p>
+    想要全心全意享受登山的過程，你只需要一些簡單的準備。首要便是帶上一瓶水，這在天氣炎熱時尤為重要。第二重要的為適當的鞋款，良好的登山鞋要能支撐你的腳踝並保護你的腳底。良好的登山鞋能夠確保你的腿部及腳部不會承受過多的壓力。若是新的登山鞋，你可以先透過短程的登山來磨合新鞋，使其材質軟化並幫助你的身體適應新鞋。若是穿新鞋來挑戰長途登山，不論鞋子品質多好，你可能在登山後腳上長出大水泡！根據你登山的地點，你可能需要一張地圖（或者需要一位會閱讀地圖的朋友）來確保你可以平安歸來。
+</p>
+<p>
+    登山為一安全的運動方式，它的門檻很低，而且不用花錢！它可以促進人與人的關係並維持你身體及心靈的健康，一週只要幾個小時便能對你的健康及抗壓性有顯著的功效。最後，只要你願意詢問，很多在地的社團都可以提供一張各種難度的登山路線的清單。
+</p>
+<hr>
+<h5>
+    感謝您有耐心得讀完本文章。請按「停止錄音」來結束錄音，並點擊「上傳」鍵來上傳你的錄音檔。完成後請按「自由問答」標籤進入下一個部分。
+</h5>
