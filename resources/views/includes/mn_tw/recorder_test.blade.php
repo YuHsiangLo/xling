@@ -1,4 +1,15 @@
 <ol>
-			<li>Please test the recording by clicking the microphone button. It will glow red. Speak a few sentences, and click the button again. You can listen to the test recording in the playback window. Make sure you can hear yourself clearly and there are no noises in the background. <strong>Do not submit this test recording.</strong></li>
-			<li>Click the 'Reading Sample' tab and start recording by clicking the microphone button once again. When it glows red, you can start reading out loud. When you are done, click on the microphone button to end the recording, and submit your recording. Then click on the 'Spontaneous speech prompts' tab for instructions about the second recording. </li>
-			</ol>
+    <li>
+        請點擊右側「按此開始錄音」測試麥克風，點擊後，按鍵會轉為紅色。
+        請隨意說幾個句子後再按此鍵結束錄音。
+        您可以由下方的播放區聆聽您的錄音檔。
+        請確認您錄音檔中的聲音清晰並且無背景雜音。
+        <strong>請不要上傳本測試錄音檔。</strong>
+    </li>
+    <li>
+        請點擊上方「篇章閱讀」標籤並再次點擊「按此開始錄音」。
+        當按鍵轉為紅色後，您即可開始錄音。
+        當您閱讀完篇章後請再按一次結束錄音並按下方「上傳錄音檔」上傳音檔。
+        完成後，請點擊「自由暢談」標籤進入第二部分的錄音。
+    </li>
+</ol>
