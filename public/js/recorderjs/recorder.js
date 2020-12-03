@@ -124,9 +124,17 @@ DEALINGS IN THE SOFTWARE.
                 if(request.responseText === 'success') {
                     callback('upload-ended');
                     return;
+                } else {
+                    callback(Lang.get('messages.RecorderUploadErrorPrefix') + request.responseText);
                 }
             } else if (request.readyState == 4 && request.status == 400) {
-                callback(Lang.get('messages.RecorderUploadErrorPrefix') + request.responseText);
+                callback(Lang.get('messages.RecorderUploadErrorPrefix') + `${request.status}: ${request.statusText}` + '<br/><br/>' + Lang.get('messages.SomethingWentWrong'));
+            } else if (request.readyState == 4 && request.status == 419) {
+                callback(Lang.get('messages.RecorderUploadErrorPrefix') + `${request.status}: ${request.statusText}` + Lang.get('messages.CSRFTokenError')); // Laravel-specific error code
+            } else if (request.readyState == 4 && request.status == 413) {
+                callback(Lang.get('messages.RecorderUploadErrorPrefix') + `${request.status}: ${request.statusText}` + ': The uploaded file likely exceeds the post_max_size directive in php.ini'); // not bothering to translate since this should only come up if the server is misconfigured
+            } else if (request.readyState == 4) {
+                callback(Lang.get('messages.RecorderUploadErrorPrefix') + `${request.status}: ${request.statusText}`); // e.g. 404: Not Found
             }
         };
 

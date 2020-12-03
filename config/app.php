@@ -238,5 +238,5 @@ return [
     'wlar_email_required' => true,
     'wlar_request_consent_publication' => true,
     'wlar_additional_reading_enabled' => true,
-
+    'wlar_test_recording_enabled' => true
 ];

@@ -19,6 +19,8 @@ return [
     "DemoTitle" => "Demographic questionnaire",
     "Next" => "Next page",
     "OK" => "OK",
+    "CSRFTokenError" => "The CSRF Token is missing or has expired.",
+    "SomethingWentWrong" => "Something went wrong. Please click OK and try submitting your recording again.",
     "RecorderTitle" => "Create Recording",
     "RecorderInstructionsTitle" => "Instructions",
     "RecorderTestTitle" => "Test Recording",

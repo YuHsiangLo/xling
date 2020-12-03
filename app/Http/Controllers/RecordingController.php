@@ -25,8 +25,8 @@ class RecordingController extends Controller
      * Save the user's recording
      */
     public function store(Request $request)
-    {     
-        // Muaz Khan     - www.MuazKhan.com 
+    {
+        // Muaz Khan     - www.MuazKhan.com
         // MIT License   - https://www.webrtc-experiment.com/licence/
         // Documentation - https://github.com/muaz-khan/RecordRTC
 
@@ -37,20 +37,20 @@ class RecordingController extends Controller
 
         if (!isset($request['audio-filename']) && !isset($request['video-filename'])) {
             Log::Error('Empty file name');
-            return response('Empty file name.', 400);
+            return response('Empty file name.');
         }
-    
+
         // do NOT allow empty file names
         if (empty($request['audio-filename']) && empty($request['video-filename'])) {
             Log::Error('Empty file name');
-            return response('Empty file name.', 400);
+            return response('Empty file name.');
         }
-        
+
         $fileName = '';
         $tempName = '';
         $file_idx = '';
         $participantFolder = $request['participant_folder'];
-        
+
         if (!empty($request->file('audio-blob'))) {
             $file_idx = 'audio-blob';
             $fileName = $request['audio-filename'];
@@ -75,26 +75,26 @@ class RecordingController extends Controller
 
             if(!empty($listOfErrors[$error])) {
                 Log::Error($listOfErrors[$error]);
-                return response($listOfErrors[$error], 400);
+                return response($listOfErrors[$error]);
             }
             else {
                 Log::Error('Not uploaded because of error #'.$_FILES["$file_idx"]["error"]);
-                return response('Not uploaded because of error #'.$_FILES["$file_idx"]["error"], 400);
+                return response('Not uploaded because of error #'.$_FILES["$file_idx"]["error"]);
             }
         }
-        
+
         if (empty($fileName) || empty($tempName)) {
             if(empty($tempName)) {
                 Log::Error('Invalid temp_name: '.$tempName);
-                return response('Invalid temp_name: '.$tempName, 400);
+                return response('Invalid temp_name: '.$tempName);
             }
             Log::Error('Invalid file name: '.$fileName);
-            return response('Invalid file name: '.$fileName, 400);
+            return response('Invalid file name: '.$fileName);
         }
-    
-        
+
+
         $filePath = '../storage/app/audio/' . $participantFolder . $fileName;
-        
+
         // make sure that one can upload only allowed audio/video files
         $allowed = array(
             'webm',
@@ -108,7 +108,7 @@ class RecordingController extends Controller
         $extension = pathinfo($filePath, PATHINFO_EXTENSION);
         if (!$extension || empty($extension) || !in_array($extension, $allowed)) {
             Log::Error('Invalid file extension: '.$extension);
-            return response('Invalid file extension: '.$extension, 400);
+            return response('Invalid file extension: '.$extension);
         }
 
         if (!file_exists('../storage/app/audio/'.$participantFolder)) {
@@ -116,20 +116,20 @@ class RecordingController extends Controller
                 mkdir('../storage/app/audio/'.$participantFolder, 0775, true);
             } catch (Exception $e) {
                 Log::Error('Problem creating participant folder: ../storage/app/audio'.$participantFolder.' : '.$e);
-                return response('Problem creating participant folder: ../storage/app/audio'.$participantFolder.' : '.$e->getMessage(), 400);
+                return response('Problem creating participant folder: ../storage/app/audio'.$participantFolder.' : '.$e->getMessage());
             }
         }
 
         try {
             if (!move_uploaded_file($tempName, $filePath)) {
                 Log::Error('Problem saving file: '.$tempName.','.$filePath);
-                return response('Problem saving file: '.$tempName.','.$filePath, 400);
+                return response('Problem saving file: '.$tempName.','.$filePath);
             }
         } catch (Exception $e) {
             Log::Error('Problem saving file: '.$tempName.','.$filePath.' : '.$e);
-            return response('Problem saving file: '.$tempName.','.$filePath.' : '.$e->getMessage(), 400);
+            return response('Problem saving file: '.$tempName.','.$filePath.' : '.$e->getMessage());
         }
-        
+
         echo 'success';
 
         $testModel = Recording::create([

@@ -112,9 +112,11 @@
 							<li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#instructions">@lang('messages.RecorderInstructionsTitle')</a>
 							</li>
+                            @if(config('app.wlar_test_recording_enabled'))
 							<li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#test">@lang('messages.RecorderTestTitle')</a>
 							</li>
+                            @endif
 							<li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#read">@lang('messages.RecorderReadingTitle')</a>
 							</li>
@@ -132,11 +134,13 @@
 									@include('includes.'.$locale.".recorder_instructions")
 								</p>
 							</div>
+                            @if(config('app.wlar_test_recording_enabled'))
 							<div class="tab-pane" id="test">
 								<p class="card-text">
 									@include('includes.'.$locale.".recorder_test")
 								</p>
 							</div>
+                            @endif
 							<div class="tab-pane" id="read">
 								<p class="card-text">
 									@include('includes.'.$locale.".reading_passage")

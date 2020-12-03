@@ -30,7 +30,9 @@
                             <tr><th>Name</th><td>{{ $consent_form->name }}</td></tr>
                             <tr><th>Email</th><td>{{ $consent_form->email }}</td></tr>
                             <tr><th>Language</th><td>{{ $consent_form->language }}</td></tr>
+                            @if(config('app.wlar_request_consent_publication'))
                             <tr><th>Publication Permission</th><td>{{ $consent_form->public ? "granted" : "withheld" }}</td></tr>
+                            @endif
                             <tr><th>Date</th><td>{{ $consent_form->created_at }}</td></tr>
                         </table>
                     </div>
@@ -72,7 +74,7 @@
                                     @empty
                                     No recordings have been submitted under this consent form.
                                 @endforelse
-                            @if (!$recordings->isEmpty())   
+                            @if (!$recordings->isEmpty())
                                 </table>
                             @endif
                         </div>

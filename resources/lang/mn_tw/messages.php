@@ -19,6 +19,8 @@ return [
     "DemoTitle" => "語言背景問卷",
     "Next" => "下一頁",
     "OK" => "了解",
+    "CSRFTokenError" => "The CSRF Token is missing or has expired.",
+    "SomethingWentWrong" => "Something went wrong. Please click OK and try submitting your recording again.",
     "RecorderTitle" => "語料錄製",
     "RecorderInstructionsTitle" => "操作說明",
     "RecorderTestTitle" => "錄音測試",

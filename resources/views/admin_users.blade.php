@@ -28,7 +28,7 @@
                     <tr><td>{{ $user->id }}</td><td>{{ $user->name }}</td><td>{{ $user->email }}</td>
                         <td>
                             @if ($user->authorized)
-                                Authorized 
+                                Authorized
                                 @if (Auth::user() != $user)
                                     (<a href="{{ route ('admin_users.deauthorize', $user->id) }}">Deauthorize</a>)
                                 @endif
@@ -51,7 +51,7 @@
                     @endif
 
                     <br/>
-                    <a href="{{ route('admin') }}">Go back to the Admin Dashboard</a>
+                    <a href="{{ route('admin') }}">Go Back to the Admin Dashboard</a>
                 </div>
             </div>
         </div>

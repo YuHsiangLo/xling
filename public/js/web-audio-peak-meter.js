@@ -268,5 +268,3 @@ function webAudioPeakMeter() {
     createMeter: createMeter,
   };
 };
-
-module.exports = webAudioPeakMeter;
