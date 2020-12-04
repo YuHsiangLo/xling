@@ -45,7 +45,7 @@ class ConsentFormController extends Controller
             'language' => $language
         ]);
 
-        $request->session()->put('user_id', $testModel->getKey());
+        $request->session()->put('user_id', $language.'_'.$testModel->getKey());
 
         return redirect()->route('demographic_questionnaires.create');
     }
