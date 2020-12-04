@@ -45,6 +45,8 @@ class ConsentFormController extends Controller
             'language' => $language
         ]);
 
+        $testModel->update(['consent_form_id' => $language.'_'.$testModel->getKey()]);
+
         $request->session()->put('user_id', $language.'_'.$testModel->getKey());
 
         return redirect()->route('demographic_questionnaires.create');
@@ -54,7 +56,7 @@ class ConsentFormController extends Controller
     public function destroy($id)
     {
         if (Gate::allows('manage-data')) {
-            $consent_form = app(\App\ConsentForm::class)->find($id);
+            $consent_form = app(\App\ConsentForm::class)->where('consent_form_id', '=', $id)->first();
             if (is_null($consent_form)) {
                 // User could not be found
                 return back()->with('error', 'Delete failed - this submission could not be found!');
@@ -63,7 +65,7 @@ class ConsentFormController extends Controller
                 return back()->with('error', 'This submission cannot be deleted - submission includes questionnaire and/or recording. View the submission details and delete the recording and/or questionnaire first.');
             }
             $consent_form->delete();
-            return back()->with('status', 'Submission for ' . $consent_form->name . ' (ID: ' . $consent_form->id . ') has been successfully deleted!');
+            return back()->with('status', 'Submission for ' . $consent_form->name . ' (ID: ' . $consent_form->consent_form_id . ') has been successfully deleted!');
         }
 
         return redirect('admin')->with('error', 'You are not currently authorized to manage submissions!');
@@ -73,7 +75,7 @@ class ConsentFormController extends Controller
     public function show($id)
     {
         if (Gate::allows('manage-data')) {
-            $consent_form = app(\App\ConsentForm::class)->find($id);
+            $consent_form = app(\App\ConsentForm::class)->where('consent_form_id', '=', $id)->first();
             if (is_null($consent_form)) {
                 // User could not be found
                 return back()->with('error', 'View failed - this submission could not be found!');
@@ -95,11 +97,11 @@ class ConsentFormController extends Controller
         $consentForms = [];
         foreach (ConsentForm::all()->sortByDesc("created_at") as $consentForm) {
                 $consentForm->has_demographic_questionnaire = true;
-                if (app(\App\DemographicQuestionnaire::class)->where('consent_form_id',$consentForm->id)->get()->count() == 0) {
+                if (app(\App\DemographicQuestionnaire::class)->where('consent_form_id', $consentForm->consent_form_id)->get()->count() == 0) {
                     $consentForm->has_demographic_questionnaire = false;
                 }
                 $consentForm->has_recording = true;
-                if (app(\App\Recording::class)->where('consent_form_id',$consentForm->id)->get()->count() == 0) {
+                if (app(\App\Recording::class)->where('consent_form_id',$consentForm->consent_form_id)->get()->count() == 0) {
                     $consentForm->has_recording = false;
                 }
                 $consentForms[] = $consentForm;

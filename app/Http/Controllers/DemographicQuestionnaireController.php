@@ -24,13 +24,13 @@ class DemographicQuestionnaireController extends Controller
      * Save the user's demographic questionnaire
      */
     public function store(Request $request)
-    {     
+    {
         // define variables
         $user = $request->session()->get('user_id');
 
         $questionnaire = new DemographicQuestionnaire;
 
-        $questionnaire->consent_form_id = (int) $user;
+        $questionnaire->consent_form_id = $user;
 
         // iterate through all form variables to store questionnaire data
         foreach($request->all() as $key => $value) {
@@ -48,13 +48,13 @@ class DemographicQuestionnaireController extends Controller
     public function destroy($id)
     {
         if (Gate::allows('manage-data')) {
-            $demographic_questionnaire = app(\App\DemographicQuestionnaire::class)->find($id);
+            $demographic_questionnaire = app(\App\DemographicQuestionnaire::class)->where('consent_form_id', '=', $id)->first();;
             if (is_null($demographic_questionnaire)) {
                 // User could not be found
                 return back()->with('error', 'Delete failed - this demographic questionnaire could not be found!');
             };
             $demographic_questionnaire->delete();
-            return back()->with('status', 'Demographic questionnaire ID ' . $demographic_questionnaire->id . ' has been successfully deleted!');
+            return back()->with('status', 'Demographic questionnaire ID ' . $demographic_questionnaire->consent_form_id . ' has been successfully deleted!');
         }
 
         return redirect('admin')->with('error', 'You are not currently authorized to manage submissions!');

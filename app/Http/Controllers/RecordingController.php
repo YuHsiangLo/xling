@@ -133,7 +133,7 @@ class RecordingController extends Controller
         echo 'success';
 
         $testModel = Recording::create([
-            'consent_form_id' => (int) $user,
+            'consent_form_id' => $user,
             'recording_filename' => $fileName
         ]);
 
@@ -143,14 +143,14 @@ class RecordingController extends Controller
     public function destroy($id)
     {
         if (Gate::allows('manage-data')) {
-            $recording = app(\App\Recording::class)->find($id);
+            $recording = app(\App\Recording::class)->where('consent_form_id', '=', $id)->first();;
             if (is_null($recording)) {
                 // Recording could not be found
                 return back()->with('error', 'Delete failed - this recording could not be found!');
             };
             Storage::delete('audio/' . $recording->consent_form_id . '/' . $recording->recording_filename);
             $recording->delete();
-            return back()->with('status', 'Recording ID ' . $recording->id . ' has been successfully deleted!');
+            return back()->with('status', 'Recording ID ' . $recording->consent_form_id . ' has been successfully deleted!');
         }
 
         return redirect('admin')->with('error', 'You are not currently authorized to manage submissions!');

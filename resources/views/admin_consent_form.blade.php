@@ -26,7 +26,7 @@
                          @endif
 
                         <table width="100%">
-                            <tr><th>ID</th><td>{{ $consent_form->id }}</td></tr>
+                            <tr><th>ID</th><td>{{ $consent_form->consent_form_id }}</td></tr>
                             <tr><th>Name</th><td>{{ $consent_form->name }}</td></tr>
                             <tr><th>Email</th><td>{{ $consent_form->email }}</td></tr>
                             <tr><th>Language</th><td>{{ $consent_form->language }}</td></tr>
@@ -41,7 +41,7 @@
                 @foreach ($demographic_questionnaires as $demographic_questionnaire)
                     <div class="card">
                     <div class="card-header"><div class="float-left"><h2>Questionnaire (ID#: {{ $demographic_questionnaire->id }})</h2></div>
-                    <div class="float-right"><a href="{{ route ('demographic_questionnaires.destroy-get', $demographic_questionnaire->id) }}" class="btn btn-info" title="Delete this questionnaire" onclick="return confirm('Are you sure you wish to delete this questionnaire? This cannot be undone!')"><i class="fas fa-trash-alt"></i></a></div>
+                    <div class="float-right"><a href="{{ route ('demographic_questionnaires.destroy-get', $demographic_questionnaire->consent_form_id) }}" class="btn btn-info" title="Delete this questionnaire" onclick="return confirm('Are you sure you wish to delete this questionnaire? This cannot be undone!')"><i class="fas fa-trash-alt"></i></a></div>
                     </div>
                         <div class="card-body">
                             <table width="100%">
@@ -69,7 +69,7 @@
                                     <tr><td>{{ $recording->id }}</td><td><audio controls preload="metadata" style=" width:500px;">
                                         <source src="{{ Storage::url('audio/' . $recording->consent_form_id . '/' . $recording->recording_filename) }}" type="audio/wav">
                                         Your browser does not support the audio element.
-                                    </audio><br /></td><td><a href="{{ Storage::url('audio/' . $recording->consent_form_id . '/' . $recording->recording_filename) }}" class="btn btn-info" title="Download"><i class="fas fa-download"></i></a> <a href="{{ route ('recordings.destroy-get', $recording->id) }}" class="btn btn-info" title="Delete recording" onclick="return confirm('Are you sure you wish to delete this recording? This cannot be undone!')"><i class="fas fa-trash-alt"></i></a></td></tr>
+                                    </audio><br /></td><td><a href="{{ Storage::url('audio/' . $recording->consent_form_id . '/' . $recording->recording_filename) }}" class="btn btn-info" title="Download"><i class="fas fa-download"></i></a> <a href="{{ route ('recordings.destroy-get', $recording->consent_form_id) }}" class="btn btn-info" title="Delete recording" onclick="return confirm('Are you sure you wish to delete this recording? This cannot be undone!')"><i class="fas fa-trash-alt"></i></a></td></tr>
                                     {{-- @endif --}}
                                     @empty
                                     No recordings have been submitted under this consent form.

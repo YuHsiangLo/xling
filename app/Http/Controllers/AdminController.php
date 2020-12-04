@@ -42,11 +42,11 @@ class AdminController extends Controller
         foreach (ConsentForm::all()->sortByDesc("created_at") as $consentForm) {
             if ($consentForm->created_at > $weekbefore) {
                 $consentForm->has_demographic_questionnaire = true;
-                if (app(\App\DemographicQuestionnaire::class)->where('consent_form_id',$consentForm->id)->get()->count() == 0) {
+                if (app(\App\DemographicQuestionnaire::class)->where('consent_form_id', $consentForm->consent_form_id)->get()->count() == 0) {
                     $consentForm->has_demographic_questionnaire = false;
                 }
                 $consentForm->has_recording = true;
-                if (app(\App\Recording::class)->where('consent_form_id',$consentForm->id)->get()->count() == 0) {
+                if (app(\App\Recording::class)->where('consent_form_id', $consentForm->consent_form_id)->get()->count() == 0) {
                     $consentForm->has_recording = false;
                 }
                 $consentForms[] = $consentForm;

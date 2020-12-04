@@ -10,6 +10,7 @@ class ConsentForm extends Model
     use \Okipa\LaravelModelJsonStorage\ModelJsonStorage;
 
     public $fillable = [
+        'consent_form_id',
         'name',
         'email',
         'public',
