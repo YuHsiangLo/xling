@@ -24,7 +24,7 @@ return [
     "RecorderTitle" => "語料錄製",
     "RecorderInstructionsTitle" => "操作說明",
     "RecorderTestTitle" => "錄音測試",
-    "RecorderToolTitle" => "錄音工具",
+    "RecorderToolTitle" => "錄音介面",
     "RecorderInputLevelLabel" => "麥克風音量",
     "RecorderPlaybackSubmitLabel" => "錄音結果",
     "RecorderReadingTitle" => "文章閱讀",
