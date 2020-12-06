@@ -25,11 +25,11 @@
     </div>
     <div class="form-group">
         <label for="pob">@lang('questionnaire.PoB')</label>
-        <input type="text" class="form-control" id="pob" name="user_pob" required>
+        <input type="text" class="form-control" id="pob" name="user_pob" placeholder=@lang('questionnaire.CityPlaceHolder') required>
     </div>
     <div class="form-group">
         <label for="cpor">@lang('questionnaire.Location')</label>
-        <input type="text" class="form-control" id="cpor" name="user_cpor" required>
+        <input type="text" class="form-control" id="cpor" name="user_cpor" placeholder=@lang('questionnaire.CityPlaceHolder') required>
     </div>
     <div class="form-group">
         <label>@lang('questionnaire.SpokenLanguages')</label>
