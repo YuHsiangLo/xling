@@ -1,1 +1,2 @@
-By agreeing to participate in this study you agree that your audio recording and its associated accent analysis can become part of the project accent database. Your recordings will be edited to be anonymous, and can be used for associated research purposes, either by being shared with other researchers, made publicly available as part of a dataset, or used in the creation of an artistic work exploring different accents.
+If you agree to participate in the study, type your name and email address in the boxes below and tick the "I consent to participate" box.
+Participation includes using your anonymized speech recordings in our database, sharing it with other researchers through a closed registration-only website, and publishing your anonymous survey results.

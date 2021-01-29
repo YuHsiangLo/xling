@@ -1,5 +1,10 @@
 <strong>Welcome, and thank you for your interest in the @lang('messages.IndexTitle') project!</strong>
 
-<br><br>Did you ever notice how some parts of English-speaking North America have strongly distinguishable accents compared to British Columbia? Probably. But have you ever noticed that certain regions of B.C. seem to have some slight differences in the way words are pronounced? Probably not. The differences in accent in British Columbia are extremely subtle, and there is not much information about how and where those differences can occur. This study is being conducted by Dr. Bob Pritchard (UBC School of Music) and Dr. Molly Babel (UBC Linguistics). If you decide to participate in this study, you will be asked to answer a few brief questions about yourself, and then record yourself reading a short passage in English. The passage will take roughly 3-4 minutes to read aloud.
+<br><br>
+We would like to invite you to take part in our research project by contributing to a collection of speech recordings from different languages.
+These recordings will help us understand how languages change over time, how languages differ from each other with respect to small details of pronunciation, and, more generally, how speech is represented and processed in the brain.
+If you decide to participate in this study, you will be asked to answer a few brief questions about yourself, record yourself reading a short passage in English, and then talking spontaneously in the same language for a few minutes.
+The passage will take roughly 5-6 minutes to read aloud. For the spontaneous speech section, you are asked to talk for no less than 5 minutes and no more than 10 minutes.
 
-<br><br>To participate in the experiment, please click the button below.
+<br><br>
+To participate in the experiment, please click the button below.
