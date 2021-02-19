@@ -122,14 +122,15 @@ function startSubmit() {
                 recwarning.innerHTML = '';
                 progressimage.innerHTML = '<img id="progressimg" src="/images/success.gif" alt="Success!"/>'
                 $('#status-footer').removeClass('invisible');
+
                 blocksubmit = 1;
                 var savebutton = document.getElementById('save');
                 savebutton.style.opacity = '0.25';
                 savebutton.disabled = true;
 
-                var downloadbutton = document.getElementById('download');
-                downloadbutton.style.opacity = '0.25';
-                downloadbutton.disabled = true;
+                //var downloadbutton = document.getElementById('download');
+                //downloadbutton.style.opacity = '0.25';
+                //downloadbutton.disabled = true;
 
                 return;
             }
