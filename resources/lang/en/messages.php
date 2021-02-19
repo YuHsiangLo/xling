@@ -35,6 +35,7 @@ return [
     "RecorderRec" => "Click to start recording",
     "RecorderStop" => "Recording - Click when finished",
     "RecorderSave" => "Submit recording",
+    "RecorderDownload" => "Download recording",
     "RecorderClose" => "Close recorder",
     "RecorderNotYet" => "Recording not yet submitted",
     "RecorderEncoding" => "Please wait while encoding audio. This may take a few minutes...",

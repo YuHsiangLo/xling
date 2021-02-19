@@ -60,12 +60,30 @@ function doneEncoding(blob) {
     currentAudio.controls = true;
     currentAudio.src = url;
 
-    var audioPlayer = document.getElementById('audioplayer')
+    var audioPlayer = document.getElementById('audioplayer');
     audioPlayer.appendChild(currentAudio);
 
     var submitbutton = document.getElementById('save');
     submitbutton.style.opacity = "1";
     submitbutton.disabled = false;
+
+    var downloadbutton = document.getElementById('download');
+
+    var date = new Date();
+    var hour = date.getHours().toString();
+    var minute = date.getMinutes().toString();
+    var second = date.getSeconds().toString();
+    var timestamp = hour + '-' + minute + '-' + second;
+    var fileext = ".wav";
+    if (blob.type == "audio/mpeg") {
+        fileext = ".mp3";
+    }
+    var filename = user_id + '_' + timestamp + fileext;
+
+    downloadbutton.href = url;
+    downloadbutton.download = filename;
+    downloadbutton.style.opacity = '1';
+    downloadbutton.disabled = false;
 
     blocksubmit = 0;
     // $("audio#recorded-audio").attr("src", url);
@@ -108,6 +126,11 @@ function startSubmit() {
                 var savebutton = document.getElementById('save');
                 savebutton.style.opacity = '0.25';
                 savebutton.disabled = true;
+
+                var downloadbutton = document.getElementById('download');
+                downloadbutton.style.opacity = '0.25';
+                downloadbutton.disabled = true;
+
                 return;
             }
             recordButton.style.opacity = '0.25';
@@ -155,6 +178,10 @@ function toggleRecording(e) {
         var savebutton = document.getElementById('save');
         savebutton.style.opacity = '0.25';
         savebutton.disabled = true;
+
+        var downloadbutton = document.getElementById('download');
+        downloadbutton.style.opacity = '0.25';
+        downloadbutton.disabled = true;
 
         var progresstext = document.getElementById('progresstext');
         progresstext.innerHTML = '';

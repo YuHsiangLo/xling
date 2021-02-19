@@ -180,6 +180,7 @@
 						{{-- <img src="{{ asset('images/save.svg') }}" width="75" height="75"> --}}
 						<i class="fas fa-upload"></i> @lang('messages.RecorderSave')
 					</button>
+                    <a id="download" class="btn btn-primary" style="margin-top: 5px" disabled><i class="fas fa-download"></i> @lang('messages.RecorderDownload')</a>
 					<div id="recwarning">
 						<div style="color: red;">@lang('messages.RecorderNotYet')</div>
 					</div>
