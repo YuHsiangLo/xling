@@ -158,7 +158,7 @@ DEALINGS IN THE SOFTWARE.
             callback(Lang.get('messages.RecorderUploadAborted'));
         };
 
-        token = document.querySelector('meta[name="csrf-token"]').content;
+        const token = document.querySelector('meta[name="csrf-token"]').content;
 
         request.open('POST', url);
         request.setRequestHeader('X-CSRF-TOKEN', token);

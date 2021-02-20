@@ -7,6 +7,7 @@ return [
     "IndexLink" => "點擊此鍵進入研究頁面",
     "SelectLanguageTitle" => "選擇語言",
     "WelcomeTitle" => "歡迎",
+    "UploadTest" => "上傳測試",
     "ConsentTitle" => "研究受試同意書",
     "ConsentParticipation" => "1、您同意參與本研究",
     "Optional" => "自由選填",
@@ -50,9 +51,10 @@ return [
     "RecorderUploadProgressPrefix" => "上傳進度 ",
     "RecorderUploadErrorPrefix" => "錯誤： ",
     "RecorderUploadGettingFileURL" => "取得檔案URL...",
-    "RecorderUploadFailed" => "上傳伺服器失敗。請使用「下載錄音檔」將錄音檔下載至您的電腦或手機再將檔案傳給研究助理羅郁翔（roger.lo@ubc.ca）。",
-    "RecorderUploadAborted" => "捨棄上傳。請使用「下載錄音檔」將錄音檔下載至您的電腦或手機再將檔案傳給研究助理羅郁翔（roger.lo@ubc.ca）。",
+    "RecorderUploadFailed" => "上傳伺服器失敗。請使用「下載錄音檔」將錄音檔下載至您的電腦或手機再將檔案傳給研究助理羅郁翔（<a href=\"mailto:roger.lo@ubc.ca\">roger.lo@ubc.ca</a>'）。",
+    "RecorderUploadAborted" => "捨棄上傳。請使用「下載錄音檔」將錄音檔下載至您的電腦或手機再將檔案傳給研究助理羅郁翔（<a href=\"mailto:roger.lo@ubc.ca\">roger.lo@ubc.ca</a>'）。",
     "RecorderUploadSuccessful" => "上傳成功",
     "RecorderUploadThankYou" => "若您還有其他錄音檔須完成或是上傳／下載，請按OK至錄音介面並繼續錄音。<br><br>若此為您最後的錄音檔，再次感謝您的參與！您現在可以關閉本頁面。",
     "RecorderBrowserError" => "抱歉您的網路瀏覽器不支援Audio API。線上錄音將無法正常執行。請更新或使用其他瀏覽器。",
+    "UploadTestFailed" => "上傳測試失敗。請使用不同的瀏覽器或是於電腦上再試一次。若仍無法順利上傳，請聯絡研究助理羅郁翔（<a href=\"mailto:roger.lo@ubc.ca\">roger.lo@ubc.ca</a>）。"
 ];
