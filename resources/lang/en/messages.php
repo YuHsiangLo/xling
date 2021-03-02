@@ -51,10 +51,14 @@ return [
     "RecorderUploadProgressPrefix" => "Upload progress ",
     "RecorderUploadErrorPrefix" => "Error: ",
     "RecorderUploadGettingFileURL" => "Getting file URL...",
-    "RecorderUploadFailed" => "Failed to upload to server.",
-    "RecorderUploadAborted" => "Upload Aborted!",
+    "RecorderUploadFailed" => "Failed to upload to server. Please use the 'Download recording' button to save the recording to your device and send it to research assistant XXX at YYY@ZZZ.",
+    "RecorderUploadAborted" => "Upload Aborted! Please use the 'Download recording' button to save the recording to your device and send it to research assistant XXX at YYY@ZZZ.",
     "RecorderUploadSuccessful" => "Upload Successful!",
-    "RecorderUploadThankYou" => "If you still have additional recordings to complete and submit, click OK to return to the interface and proceed with recording them.<br><br>If this was your final recording, thank you for participating! You may now close this window.",
+    "RecorderUploadThankYou" => "If you still have additional recordings to complete and submit/download, click OK to return to the interface and proceed with recording them.<br><br>If this was your final recording, thank you for participating! You may now close this window.",
     "RecorderBrowserError" => "Sorry, your web browser does not seem to support Web Audio API. The online recorder will not function. Please try upgrading your browser or try a different browser.",
-    "UploadTestFailed" => "Upload failed. Try again or change"
+    "UploadTestFailed" =>
+        "Upload test failed.
+        Please use a different browser or attempt the study on a computer.
+        You can still participate in the study with the current setup, but you might need to download the recordings and send them to the research assistant.
+        If you have any questions, please contact research assistant XXX at YYY@ZZZ."
 ];

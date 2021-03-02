@@ -56,5 +56,8 @@ return [
     "RecorderUploadSuccessful" => "上傳成功",
     "RecorderUploadThankYou" => "若您還有其他錄音檔須完成或是上傳／下載，請按OK至錄音介面並繼續錄音。<br><br>若此為您最後的錄音檔，再次感謝您的參與！您現在可以關閉本頁面。",
     "RecorderBrowserError" => "抱歉您的網路瀏覽器不支援Audio API。線上錄音將無法正常執行。請更新或使用其他瀏覽器。",
-    "UploadTestFailed" => "上傳測試失敗。請使用不同的瀏覽器或是於電腦上再試一次。若仍無法順利上傳，請聯絡研究助理羅郁翔（<a href=\"mailto:roger.lo@ubc.ca\">roger.lo@ubc.ca</a>）。"
+    "UploadTestFailed" =>
+        "上傳測試失敗。請使用不同的瀏覽器或是於電腦上再試一次。
+         您仍可在目前的裝置上繼續本研究，但若是後續的錄音上傳失敗，您須將錄音檔下載並寄給研究助理羅郁翔（<a href=\"mailto:roger.lo@ubc.ca\">roger.lo@ubc.ca</a>）。
+         若您有任何問題，請聯絡研究助理羅郁翔（<a href=\"mailto:roger.lo@ubc.ca\">roger.lo@ubc.ca</a>）。"
 ];

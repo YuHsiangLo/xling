@@ -230,10 +230,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
-
     'wlar_languages' => [
         ["name" => "English", "id" => "en" ],
-        ["name" => "臺灣中文", "id" => "mn_tw"]
+        ["name" => "臺灣中文", "id" => "mn_tw"],
+        ["name" => "한국어", "id" => "kr"]
         ],
     'wlar_email_required' => true,
     'wlar_request_consent_publication' => true,
