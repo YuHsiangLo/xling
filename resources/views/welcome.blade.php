@@ -119,7 +119,6 @@
                     status.innerHTML = Lang.get('messages.UploadTestFailed');
                     participate.hidden = false;
                 } else if (progress === 'ended') {
-                    status.innerHTML = Lang.get('messages.UploadTestFailed');
                     //const participate = document.getElementById('participate');
                     participate.hidden = false;
                 }
