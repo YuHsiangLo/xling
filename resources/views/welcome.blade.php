@@ -15,9 +15,11 @@
 			@include('includes.'.$locale.".welcome_message")
 		</div>
 	</div>
+    <br>
     <div class="text-center">
-        <button id="test_upload" class="btn btn-outline-secondary btn-lg m-3 w-75" role="button" onclick="submitTest('{{$locale}}');">@lang('messages.UploadTest')</button>
-        <div id="status_text" class="mx-auto w-75" style="color: #a81e32"></div>
+        <div id="upload_instruction_text" class="mx-auto w-75" style="color: #176f58; font-size: 14pt;">@lang('messages.UploadInstructionText')</div>
+        <button id="test_upload" class="btn btn-outline-secondary btn-lg m-3 w-75" role="button" onclick="submitTest('{{$locale}}');">@lang('messages.UploadButtonText')</button>
+        <div id="status_text" class="mx-auto w-75" style="font-size: 14pt;"></div>
     </div>
 	<div class="text-center">
 		<a id="participate" class="btn btn-outline-secondary btn-lg m-3 w-75" role="button" href="{{ route('consent_forms.create') }}" hidden>@lang('messages.IndexLink')</a>
@@ -116,10 +118,12 @@
                 const status = document.getElementById('status_text');
                 const participate = document.getElementById('participate');
                 if (progress.startsWith(Lang.get('messages.RecorderUploadErrorPrefix'))) {
+                    status.style.color = "#a81e32";
                     status.innerHTML = Lang.get('messages.UploadTestFailed');
                     participate.hidden = false;
                 } else if (progress === 'ended') {
-                    //const participate = document.getElementById('participate');
+                    status.style.color = "#176f58";
+                    status.innerHTML = Lang.get('messages.UploadTestPassed');
                     participate.hidden = false;
                 }
             })

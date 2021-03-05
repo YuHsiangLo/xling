@@ -7,7 +7,8 @@ return [
     "IndexLink" => "Participate in the experiment",
     "SelectLanguageTitle" => "Select Language",
     "WelcomeTitle" => "Welcome",
-    "UploadTest" => "Test uploading",
+    "UploadInstructionText" => "You'll need to record yourself and upload the recordings through this website. To make sure the file-uploading function is working properly,",
+    "UploadButtonText" => "click here to test file upload.",
     "ConsentTitle" => "Consent Form",
     "ConsentParticipation" => "1. Consent to participate",
     "Optional" => "Optional",
@@ -56,6 +57,7 @@ return [
     "RecorderUploadSuccessful" => "Upload Successful!",
     "RecorderUploadThankYou" => "If you still have additional recordings to complete and submit/download, click OK to return to the interface and proceed with recording them.<br><br>If this was your final recording, thank you for participating! You may now close this window.",
     "RecorderBrowserError" => "Sorry, your web browser does not seem to support Web Audio API. The online recorder will not function. Please try upgrading your browser or try a different browser.",
+    "UploadTestPassed" => "Upload test passed!",
     "UploadTestFailed" =>
         "Upload test failed.
         Please use a different browser or attempt the study on a computer.
