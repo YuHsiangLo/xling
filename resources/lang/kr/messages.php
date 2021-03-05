@@ -7,8 +7,8 @@ return [
     "IndexLink" => "연구 참여",
     "SelectLanguageTitle" => "언어 선택",
     "WelcomeTitle" => "환영합니다",
-    "UploadInstructionText" => "You'll need to record yourself and upload the recordings through this website. To make sure the file-uploading function is working properly,",  //TODO
-    "UploadButtonText" => "click here to test file upload.", //TODO
+    "UploadInstructionText" => "실험 참여자들은 이 웹사이트를 통해 본인의 녹음 파일을 제출하여야 합니다. 파일 업로드 기능이 잘 작동되는지 미리 확인하기 위하여 <strong>여기를 눌러서 테스트 파일 제출해보기</strong>를 진행해주세요.",
+    "UploadButtonText" => "여기를 눌러서 테스트 파일 제출해보기",
     "ConsentTitle" => "동의 양식",
     "ConsentParticipation" => "1. 참여 동의",
     "Optional" => "선택",
@@ -52,12 +52,12 @@ return [
     "RecorderUploadProgressPrefix" => "업로드 진행률",
     "RecorderUploadErrorPrefix" => "오류: ",
     "RecorderUploadGettingFileURL" => "파일 URL을 가져 오는 중 ...",
-    "RecorderUploadFailed" => "서버에 업로드하지 못했습니다. Please use the 'Download recording' button to save the recording to your device and send it to research assistant XXX at YYY@ZZZ.",
-    "RecorderUploadAborted" => "업로드가 중단되었습니다! Please use the 'Download recording' button to save the recording to your device and send it to research assistant XXX at YYY@ZZZ.",
+    "RecorderUploadFailed" => "서버에 업로드하지 못했습니다. '녹음본 다운받기'로 녹음본을 저장하신 후, 해당 녹음본을 연구 조교 ABC의 이메일 yyy@zzz로 보내주세요.",
+    "RecorderUploadAborted" => "업로드가 중단되었습니다! '녹음본 다운받기'로 녹음본을 저장하신 후, 해당 녹음본을 연구 조교 ABC의 이메일 yyy@zzz로 보내주세요.",
     "RecorderUploadSuccessful" => "업로드 성공!",
     "RecorderUploadThankYou" => "완료하고 제출해야할 추가 녹음이있는 경우, 확인을 클릭하여 페이지로 돌아가서 녹음을 계속하십시오.<br><br>모든 녹음이 완료되었다면 참여해 주셔서 감사합니다! 이제 이 창을 닫아도됩니다.",
     "RecorderBrowserError" => "죄송합니다. 웹 브라우저가 Web Audio API를 지원하지 않습니다. 온라인 녹음이 작동하지 않습니다. 브라우저를 업그레이드하거나 다른 브라우저를 사용해보십시오.",
-    "UploadTestPassed" => "Upload test passed!", //TODO
+    "UploadTestPassed" => "테스트 파일 제출 성공!",
     "UploadTestFailed" =>
         "업로드를 실패하였습니다. 다른 브라우저를 사용하거나 컴퓨터로 다시 시도해보십시오.
         이미 완료한 녹음본으로 제출하려면 '녹음본 다운받기'로 녹음본을 저장하신 후 연구 조교에게 보내주시면 됩니다.
