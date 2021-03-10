@@ -60,7 +60,5 @@ return [
     "UploadTestPassed" => "Upload test passed!",
     "UploadTestFailed" =>
         "Upload test failed.
-        Please use a different browser or attempt the study on a computer.
-        You can still participate in the study with the current setup, but you might need to download the recordings and send them to the research assistant.
-        If you have any questions, please contact research assistant XXX at YYY@ZZZ."
+        Please use a different browser or attempt the study on a computer. If the problem persists, please contact research assistant XXX at YYY@ZZZ for further instructions."
 ];
