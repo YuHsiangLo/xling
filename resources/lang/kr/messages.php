@@ -60,6 +60,5 @@ return [
     "UploadTestPassed" => "테스트 파일 제출 성공!",
     "UploadTestFailed" =>
         "업로드를 실패하였습니다. 다른 브라우저를 사용하거나 컴퓨터로 다시 시도해보십시오.
-        이미 완료한 녹음본으로 제출하려면 '녹음본 다운받기'로 녹음본을 저장하신 후 연구 조교에게 보내주시면 됩니다.
-        질문이 있으시다면 연구조교 Ellie Yoon의 이메일 cdlb3_min@yahoo.com이나, Jasmine Lim의 이메일 jasminelim5@icloud.com로 연락주세요."
+        같은 문제가 지속된다면, 연구조교 Ellie Yoon의 이메일 cdlb3_min@yahoo.com이나, Jasmine Lim의 이메일 jasminelim5@icloud.com로 연락주세요."
 ];
