@@ -313,7 +313,6 @@ function gotStream(stream, locale) {
 }
 
 function onOk() {
-    console.log('pushedd')
     audioRecorder.stop();
     audioContext.close();
     gumStream.getAudioTracks()[0].stop();
@@ -358,13 +357,13 @@ function initAudio(locale) {
     }
 
     navigator.mediaDevices.getUserMedia({'audio': true, 'video': false})
-    .then(function(stream) {
+        .then(function(stream) {
             return gotStream(stream, locale);
-    })
-    .catch(function(e) {
+        })
+        .catch(function(e) {
             alert('Error getting audio');
             console.log(e);
-    });
+        });
 }
 
 

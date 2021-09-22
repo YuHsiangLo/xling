@@ -7,6 +7,7 @@
 @section('content')
 <div class="card w-75 mx-auto">
     <div class="card-body p-3" style="font-size: 12pt; overflow-y: auto; max-height: 275px">
+        <div style="margin: 0; text-align: right">Ethics ID: H19-00579</div>
         @include('includes.'.$locale.".consent_text")
     </div>
 </div>
